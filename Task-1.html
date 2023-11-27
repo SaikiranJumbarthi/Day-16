@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+</head>
+<body>
+    <h1>Difference Between Body Selector and Universal Selector</h1>
+<h1>Body Selector:</h1>
+<p>Applies style properties to body element.<br>
+Elements within body may inherit the property values. Some properties default to 'inherit'.<br>
+Style declarations that match an element within body can override the inherited style.</p>
+<br>
+<h1>The Universal Selector * (all elements):</h1>
+<p>Applies style properties to all individual elements.<br>
+Replaces inherited style properties, and default 'initial values'. Blocks inheritance.<br>
+Other, more specific css selectors that match an element will replace the style properties applied by *.</p>
+<p>Suggestions:</p>
+<p>Use body for style properties that default to inherit, such as font, color, in order to provide a sensible default value for elements,<br>
+reducing the need to explicitly code for every case, and preserving the ability for elements contained at lower levels below body<br> to inherit from their parents.
+Probably better not to use the Universal Selector * in this case.It interrupts inheritance between<br> 
+other elements within body, and may force you to write more css rules to compensate. It can be a factor in slowing rendering of pages.<br>
+ This depends on the size and content of the page and how many css rules there are.</p>
+
+    
+</body>
+</html>
